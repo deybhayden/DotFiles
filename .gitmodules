@@ -1,0 +1,84 @@
+[submodule ".vim/pack/benjavim/start/sensible"]
+	path = .vim/pack/benjavim/start/sensible
+	url = https://github.com/tpope/vim-sensible.git
+[submodule ".vim/pack/benjavim/start/solarized"]
+	path = .vim/pack/benjavim/start/solarized
+	url = https://github.com/deybhayden/vim-colors-solarized.git
+[submodule ".vim/pack/benjavim/start/surround"]
+	path = .vim/pack/benjavim/start/surround
+	url = https://github.com/tpope/vim-surround.git
+[submodule ".vim/pack/benjavim/start/fugitive"]
+	path = .vim/pack/benjavim/start/fugitive
+	url = https://github.com/tpope/vim-fugitive.git
+[submodule ".vim/pack/benjavim/start/commentary"]
+	path = .vim/pack/benjavim/start/commentary
+	url = https://github.com/tpope/vim-commentary.git
+[submodule ".vim/pack/benjavim/start/abolish"]
+	path = .vim/pack/benjavim/start/abolish
+	url = https://github.com/tpope/vim-abolish.git
+[submodule ".vim/pack/benjavim/start/lightline"]
+	path = .vim/pack/benjavim/start/lightline
+	url = https://github.com/itchyny/lightline.vim.git
+[submodule ".vim/pack/benjavim/start/ripgrep"]
+	path = .vim/pack/benjavim/start/ripgrep
+	url = https://github.com/jremmen/vim-ripgrep.git
+[submodule ".vim/pack/benjavim/start/rhubarb"]
+	path = .vim/pack/benjavim/start/rhubarb
+	url = https://github.com/tpope/vim-rhubarb.git
+[submodule ".vim/pack/benjavim/start/fzf"]
+	path = .vim/pack/benjavim/start/fzf
+	url = https://github.com/junegunn/fzf.vim.git
+[submodule ".vim/pack/benjavim/start/unimpaired"]
+	path = .vim/pack/benjavim/start/unimpaired
+	url = https://github.com/tpope/vim-unimpaired.git
+[submodule ".vim/pack/benjavim/start/python-indent"]
+	path = .vim/pack/benjavim/start/python-indent
+	url = https://github.com/Vimjas/vim-python-pep8-indent.git
+[submodule ".vim/pack/benjavim/start/gnupg"]
+	path = .vim/pack/benjavim/start/gnupg
+	url = https://github.com/jamessan/vim-gnupg.git
+[submodule ".vim/pack/benjavim/start/gitgutter"]
+	path = .vim/pack/benjavim/start/gitgutter
+	url = https://github.com/airblade/vim-gitgutter.git
+[submodule ".vim/pack/benjavim/start/fzf-mru"]
+	path = .vim/pack/benjavim/start/fzf-mru
+	url = https://github.com/pbogut/fzf-mru.vim.git
+[submodule ".vim/pack/benjavim/start/rsi"]
+	path = .vim/pack/benjavim/start/rsi
+	url = https://github.com/tpope/vim-rsi.git
+[submodule ".vim/pack/benjavim/start/open-browser"]
+	path = .vim/pack/benjavim/start/open-browser
+	url = https://github.com/tyru/open-browser.vim.git
+[submodule ".vim/pack/benjavim/start/auto-pairs"]
+	path = .vim/pack/benjavim/start/auto-pairs
+	url = https://github.com/jiangmiao/auto-pairs.git
+[submodule ".vim/pack/benjavim/start/endwise"]
+	path = .vim/pack/benjavim/start/endwise
+	url = https://github.com/tpope/vim-endwise.git
+[submodule ".vim/pack/benjavim/start/javascript"]
+	path = .vim/pack/benjavim/start/javascript
+	url = https://github.com/pangloss/vim-javascript.git
+[submodule ".vim/pack/benjavim/start/tagbar"]
+	path = .vim/pack/benjavim/start/tagbar
+	url = https://github.com/majutsushi/tagbar.git
+[submodule ".vim/pack/benjavim/start/repeat"]
+	path = .vim/pack/benjavim/start/repeat
+	url = https://github.com/tpope/vim-repeat.git
+[submodule ".vim/pack/benjavim/start/visualstar"]
+	path = .vim/pack/benjavim/start/visualstar
+	url = https://github.com/bronson/vim-visual-star-search.git
+[submodule ".vim/pack/benjavim/start/nginx"]
+	path = .vim/pack/benjavim/start/nginx
+	url = https://github.com/chr4/nginx.vim.git
+[submodule ".vim/pack/benjavim/start/ale"]
+	path = .vim/pack/benjavim/start/ale
+	url = https://github.com/w0rp/ale.git
+[submodule ".vim/pack/benjavim/start/ragtag"]
+	path = .vim/pack/benjavim/start/ragtag
+	url = https://github.com/tpope/vim-ragtag.git
+[submodule ".vim/pack/benjavim/start/salt"]
+	path = .vim/pack/benjavim/start/salt
+	url = https://github.com/saltstack/salt-vim.git
+[submodule ".vim/pack/benjavim/start/vimux"]
+	path = .vim/pack/benjavim/start/vimux
+	url = https://github.com/benmills/vimux.git
