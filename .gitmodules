@@ -82,3 +82,6 @@
 [submodule ".vim/pack/benjavim/start/vimux"]
 	path = .vim/pack/benjavim/start/vimux
 	url = https://github.com/benmills/vimux.git
+[submodule ".vim/pack/benjavim/start/capslock"]
+	path = .vim/pack/benjavim/start/capslock
+	url = https://github.com/tpope/vim-capslock.git
