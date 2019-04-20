@@ -17,7 +17,7 @@ if [[ ! $(brew --version) ]]; then
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
   echo "Installing brew packages"
-  brew install awscli bash bash-completion coreutils ctags direnv ffmpeg findutils fzf gcc git gnu-sed gnutls gpg grep htop httpie hub imagemagick jq nodejs openssl p7zip packer pssh rename ripgrep stow tmux urlview vim youtube-dl z
+  brew install awscli bash bash-completion coreutils ctags direnv ffmpeg findutils fzf gcc git gnu-sed gnutls gpg grep htop httpie hub imagemagick jq nodejs openssl p7zip packer pssh pyenv pyenv-virtualenv rename ripgrep stow tmux urlview vim youtube-dl z zlib
 
   echo "Changing default shell to latest bash"
   echo "/usr/local/bin/bash" | sudo tee -a /etc/shells
