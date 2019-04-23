@@ -63,7 +63,7 @@ else
 fi
 
 # Set Git Repos location if it isn't set
-[ -z "$REPOS_DIR" ] && export REPOS_DIR="$HOME/Repos"
+[ -z "$REPO_DIR" ] && export REPO_DIR="$HOME/Repos"
 
 export EDITOR='vim'
 
@@ -80,9 +80,9 @@ alias et='vim "$HOME"/.tmux.conf'
 
 # Directory alieases
 alias src='source "$HOME/.bash_profile"'
-alias .f='cd "$REPOS_DIR/DotFiles/"'
-alias .v='cd "$REPOS_DIR/DotFiles/.vim/"'
-alias rep='cd "$REPOS_DIR/"'
+alias .f='cd "$REPO_DIR/DotFiles/"'
+alias .v='cd "$REPO_DIR/DotFiles/.vim/"'
+alias rep='cd "$REPO_DIR/"'
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
@@ -195,10 +195,10 @@ gsmash() {
 gl-repos() {
   GREEN='\033[0;32m'
   NC='\033[0m' # No Color
-  for d in $(ls "$REPOS_DIR"); do
+  for d in $(ls "$REPO_DIR"); do
     (
       printf "\n${GREEN}== $d ==${NC}\n"
-      cd "$REPOS_DIR/$d"
+      cd "$REPO_DIR/$d"
       gl
     )
   done
@@ -207,10 +207,10 @@ gl-repos() {
 gst-repos() {
   GREEN='\033[0;32m'
   NC='\033[0m' # No Color
-  for d in $(ls "$REPOS_DIR"); do
+  for d in $(ls "$REPO_DIR"); do
     (
       printf "\n${GREEN}== $d ==${NC}\n"
-      cd "$REPOS_DIR/$d"
+      cd "$REPO_DIR/$d"
       gst
     )
   done
