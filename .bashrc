@@ -227,6 +227,9 @@ alias dri='docker rmi $(docker images -f "dangling=true" -q)'
 alias drc='docker rm $(docker ps -f "status=exited" -q)'
 alias dp='docker ps'
 complete -F _docker_container_ls dp
+alias dcu="docker-compose up"
+alias dcd="docker-compose down"
+alias dcb="docker-compose build"
 
 # If there are custom aliases, load them
 if [[ -f $HOME/.bash_aliases ]] ; then
