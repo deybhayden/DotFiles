@@ -18,6 +18,10 @@ tags
 .DS_Store
 # Python
 *.pyc
+.python-version
 # Node/Yarn
 node_modules
 .yarnclean
+# Dynamic Envs
+.envrc
+.env
