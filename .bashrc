@@ -184,7 +184,7 @@ gbu() {
 __git_complete gbu _git_branch
 
 ggp() {
-  git push -u --force-with-lease origin $(git rev-parse --abbrev-ref HEAD)
+  git push --force-with-lease origin $(git rev-parse --abbrev-ref HEAD)
 }
 
 gsmash() {
