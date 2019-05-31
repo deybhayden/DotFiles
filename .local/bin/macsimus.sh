@@ -32,7 +32,7 @@ if [[ ! $(brew --version) ]]; then
   brew tap caskroom/fonts
 
   echo "Installing casks"
-  brew cask install docker flycut font-fira-mono google-backup-and-sync google-chrome iterm2 kap karabiner-elements keepingyouawake logitech-options macvim nightowl sequel-pro slack tunnelblick
+  brew cask install appcleaner docker flycut font-fira-mono google-backup-and-sync google-chrome iterm2 kap karabiner-elements keepingyouawake logitech-options macvim nightowl sequel-pro slack tunnelblick
 
   echo "Installing global python tools"
   /usr/local/bin/pip install vim-vint
