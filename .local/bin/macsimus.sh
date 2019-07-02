@@ -38,7 +38,7 @@ if [[ ! $(brew --version) ]]; then
   /usr/local/bin/pip install vim-vint
 
   echo "Installing global npms"
-  npm install -g prettier tern jsonlint
+  npm install -g prettier tern jsonlint markdownlint-cli
 
   echo "Stowing files"
   stow -t ~ .
