@@ -17,7 +17,7 @@ if [[ ! $(brew --version) ]]; then
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
   echo "Installing brew packages"
-  brew install awscli bash bash-completion coreutils ctags direnv ffmpeg findutils fzf gcc git gnu-sed gnutls golang gpg grep htop httpie hub imagemagick jq mysql nodejs openssl p7zip packer pssh pyenv pyenv-virtualenv rename ripgrep stow tmux urlview vim youtube-dl z zlib
+  brew install awscli bash bash-completion coreutils ctags direnv ffmpeg findutils fzf gcc git gnu-sed gnutls golang gpg grep htop httpie hub imagemagick jq mysql nodejs openssl p7zip packer pssh pyenv pyenv-virtualenv rename ripgrep stow tmux urlview vim z zlib
 
   echo "Starting local mysql"
   brew services start mysql
@@ -32,7 +32,7 @@ if [[ ! $(brew --version) ]]; then
   brew tap caskroom/fonts
 
   echo "Installing casks"
-  brew cask install appcleaner docker flycut font-fira-mono google-backup-and-sync google-chrome iterm2 kap karabiner-elements keepingyouawake logitech-options macvim nightowl sequel-pro slack tunnelblick
+  brew cask install appcleaner docker flycut font-fira-mono google-backup-and-sync google-chrome iterm2 karabiner-elements keepingyouawake logitech-options macvim nightowl sequel-pro slack zoomus
 
   echo "Installing global python tools"
   /usr/local/bin/pip install vim-vint
