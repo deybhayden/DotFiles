@@ -99,6 +99,11 @@ if [[ $TMUX ]]; then
   alias ssh="TERM=screen-256color ssh"
 fi
 
+rpg() {
+  # ripgrep with a pager, retain formatting
+  rg $1 -p | less -R
+}
+
 # python
 alias ip="ipython"
 alias pylab="ipython --pylab"
