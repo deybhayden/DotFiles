@@ -91,6 +91,7 @@ nnoremap <leader>? :Helptags<cr>
 nnoremap <leader>sh :helptags ALL<cr>
 nnoremap <leader>l :call fxns#LListToggle()<cr>
 nnoremap <leader>c :call fxns#QListToggle()<cr>
+nnoremap <leader>y :let @+ = expand("%") \| echo expand("%")<cr>
 " F6 is acts as an inbetween for iTerm2 and CMD+s
 nnoremap <F6> :update<cr>
 inoremap <F6> <C-o>:update<cr>
