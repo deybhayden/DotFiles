@@ -1,6 +1,7 @@
 .ipython/profile_default/*
 !.ipython/profile_default/ipython_config.py
 .local/bin/*
+.local/lib
 .local/share
 !.local/bin/macsimus.sh
 !.local/bin/battery
