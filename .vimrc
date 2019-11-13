@@ -148,7 +148,9 @@ nnoremap <leader>gp :Gpush<cr>
 nnoremap <leader>gb :Gblame!<cr>
 vnoremap <leader>gb :Gblame!<cr>
 nnoremap <leader>gl :Gbrowse!<cr>
+nnoremap <leader>gL :Gbrowse<cr>
 vnoremap <leader>gl :Gbrowse!<cr>
+vnoremap <leader>gL :Gbrowse<cr>
 nnoremap <leader>gs :Gstatus<cr>
 
 " Abolish
