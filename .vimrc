@@ -152,6 +152,8 @@ nnoremap <leader>gL :Gbrowse<cr>
 vnoremap <leader>gl :Gbrowse!<cr>
 vnoremap <leader>gL :Gbrowse<cr>
 nnoremap <leader>gs :Gstatus<cr>
+nnoremap <leader>gm :Glog -- % \| Gbrowse!<cr>
+nnoremap <leader>gM :Glog -- % \| Gbrowse<cr>
 
 " Abolish
 nnoremap <space>s V:S/
