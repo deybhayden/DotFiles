@@ -104,6 +104,7 @@ vnoremap <space>6 c<c-r>=system('base64', @")<cr><esc>
 " Ale
 nnoremap <leader>sf :ALEFix<cr>
 nnoremap <leader>sF :ALEToggleFixer<cr>
+nnoremap <leader>sa :ALEToggle<cr>
 let g:ale_fix_on_save = 1
 let g:ale_completion_enabled = 1
 let g:ale_cache_executable_check_failures = 1
