@@ -27,9 +27,9 @@ if [[ ! $(brew --version) ]]; then
   chsh -s /usr/local/bin/bash
 
   echo "Tap some casks"
-  brew tap caskroom/cask
-  brew tap caskroom/drivers
-  brew tap caskroom/fonts
+  brew tap homebrew/cask-cask
+  brew tap homebrew/cask-drivers
+  brew tap homebrew/cask-fonts
 
   echo "Installing casks"
   brew cask install appcleaner docker flycut font-fira-mono google-backup-and-sync google-chrome iterm2 karabiner-elements keepingyouawake logitech-options macvim nightowl sequel-pro slack zoomus
