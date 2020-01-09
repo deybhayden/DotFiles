@@ -88,3 +88,6 @@
 [submodule ".vim/pack/benjavim/start/golang"]
 	path = .vim/pack/benjavim/start/golang
 	url = https://github.com/fatih/vim-go.git
+[submodule ".vim/pack/benjavim/start/mako"]
+	path = .vim/pack/benjavim/start/mako
+	url = https://github.com/sophacles/vim-bundle-mako.git
