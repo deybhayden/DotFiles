@@ -91,3 +91,6 @@
 [submodule ".vim/pack/benjavim/start/mako"]
 	path = .vim/pack/benjavim/start/mako
 	url = https://github.com/sophacles/vim-bundle-mako.git
+[submodule ".vim/pack/benjavim/start/logs"]
+	path = .vim/pack/benjavim/start/logs
+	url = https://github.com/MTDL9/vim-log-highlighting.git
