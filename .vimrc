@@ -19,7 +19,7 @@ let &t_te = "\e[0 q"
 let &t_ZH="\e[3m"
 let &t_ZR="\e[23m"
 " Set vertical split chars
-set fillchars+=vert:\
+set fillchars+=vert:\ 
 " Configure status line
 let g:lightline = {
       \ 'colorscheme': 'solarized',
