@@ -64,6 +64,7 @@ if has('macunix')
 else
   set runtimepath+=~/.fzf
 endif
+let g:fzf_tags_command = 'ctags -R'
 " Disable autopair keybindings
 let g:AutoPairsShortcutToggle = ''
 let g:AutoPairsShortcutFastWrap = ''
