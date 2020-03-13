@@ -140,7 +140,7 @@ nnoremap <leader>u :FZFMru<cr>
 nnoremap <leader>T :Tags<cr>
 nnoremap <leader>t :TagbarToggle<cr>
 nnoremap <leader>gf :GFiles<cr>
-nnoremap <M-p> :FZF<cr>
+nnoremap p :FZF<cr>
 
 " Git
 nnoremap <leader>gg :GitGutter<cr>
@@ -162,7 +162,7 @@ nnoremap <space>s V:S/
 vnoremap <space>s :S/
 
 " Ragtag
-inoremap <M-o> <Esc>o
+inoremap o <Esc>o
 inoremap <C-j> <Down>
 let g:ragtag_global_maps = 1
 
