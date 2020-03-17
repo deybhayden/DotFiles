@@ -148,7 +148,9 @@ __git_complete gdc _git_diff
 alias gl="git pull"
 __git_complete gl _git_pull
 alias glg="git log --stat"
+__git_complete glg _git_log
 alias glgp="git log --stat -p"
+__git_complete glgp _git_log
 alias gclean='git clean -fd'
 alias gr='git remote'
 __git_complete gr _git_remote
