@@ -201,6 +201,10 @@ gsmash() {
   ggp
 }
 
+gl-cnt() {
+  git log origin/master --no-merges --since="2 year ago" --pretty='%ae' -- $1 | sort | uniq -c | sort -r
+}
+
 gl-repos() {
   GREEN='\033[0;32m'
   NC='\033[0m' # No Color
