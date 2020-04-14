@@ -174,7 +174,7 @@ augroup END
 
 " Vimux
 nnoremap <leader>vp :VimuxPromptCommand<cr>
-nnoremap <Leader>vl :VimuxRunLastCommand<CR>
+nnoremap <leader>vl :VimuxRunLastCommand<CR>
 
 " Other mappings
 
