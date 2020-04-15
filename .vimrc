@@ -2,6 +2,9 @@
 " Maintainer:   Ben Hayden <https://deybhayden.me/>
 " Version:      0.1
 
+" Set script encoding
+set encoding=utf-8
+scriptencoding utf-8
 " Set colorscheme and other UI tweaks
 colorscheme solarized
 if $COLORFGBG ==# '11;15'
