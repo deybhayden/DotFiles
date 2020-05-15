@@ -138,7 +138,7 @@ vnoremap <leader>, :Commentary<cr>
 nnoremap <leader>f :FZF<cr>
 nnoremap <leader>F :FZF <C-r>=expand('%:h')<cr><cr>
 nnoremap <leader>r :Rg<space>
-nnoremap <leader>R :Rg <C-r><C-w>
+nnoremap <leader>R :Rg <C-r><C-w><cr>
 nnoremap <leader>u :FZFMru<cr>
 nnoremap <leader>T :Tags<cr>
 nnoremap <leader>t :TagbarToggle<cr>
