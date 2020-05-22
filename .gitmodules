@@ -94,3 +94,6 @@
 [submodule ".vim/pack/benjavim/start/logs"]
 	path = .vim/pack/benjavim/start/logs
 	url = https://github.com/MTDL9/vim-log-highlighting.git
+[submodule ".vim/pack/benjavim/start/toml"]
+	path = .vim/pack/benjavim/start/toml
+	url = https://github.com/cespare/vim-toml.git
