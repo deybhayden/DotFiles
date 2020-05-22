@@ -17,7 +17,7 @@ if [[ ! $(brew --version) ]]; then
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
   echo "Installing brew packages"
-  brew install awscli bash bash-completion coreutils ctags direnv ffmpeg findutils fzf gcc git gnu-sed gnutls golang gpg grep htop httpie hub imagemagick jq mysql nodejs openssl p7zip packer pango pyenv pyenv-virtualenv rbenv rename ripgrep stow tmux urlview vim z zlib
+  brew install awscli bash bash-completion coreutils ctags direnv ffmpeg findutils fzf gcc git gnu-sed gnutls golang gpg grep htop httpie hub hugo imagemagick jq mysql nodejs openssl p7zip packer pango pyenv pyenv-virtualenv rbenv rename ripgrep stow tmux urlview vim z zlib
 
   echo "Starting local mysql"
   brew services start mysql
@@ -38,7 +38,7 @@ if [[ ! $(brew --version) ]]; then
   /usr/local/bin/pip install vim-vint
 
   echo "Installing global npms"
-  npm install -g prettier tern jsonlint markdownlint-cli
+  npm install -g firebase-tools prettier tern jsonlint markdownlint-cli
 
   echo "Stowing files"
   stow -t ~ .
