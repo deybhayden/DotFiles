@@ -70,6 +70,8 @@ export EDITOR='vim'
 # Vim aliases
 alias e='vim'
 alias v='vim'
+alias viim='vim'
+alias vimi='vim'
 alias vm='vim'
 alias vmi='vim'
 alias vom='vim'
