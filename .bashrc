@@ -166,6 +166,7 @@ __git_complete grbi _git_rebase
 alias grbs='git rebase --skip'
 alias grh='git reset HEAD'
 alias gsh='git show'
+__git_complete gsh _git_show
 alias gsta='git stash'
 alias gstp='git stash pop'
 alias gsub='git submodule update --remote --merge'
