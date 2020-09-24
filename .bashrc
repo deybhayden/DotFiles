@@ -237,8 +237,11 @@ gst-repos() {
 alias d='docker'
 complete -F _docker d
 alias db='docker build'
+alias dx='docker exec -it'
 alias dr='docker run'
 alias di='docker images'
+alias dv='docker volume'
+alias ds='docker stats'
 complete -F _docker_images di
 alias dri='docker rmi $(docker images -f "dangling=true" -q)'
 alias drc='docker rm $(docker ps -f "status=exited" -q)'
