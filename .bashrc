@@ -93,7 +93,7 @@ alias ....="cd ../../.."
 
 # Misc.
 alias ls="ls --color=tty"
-alias ll="ls -hal --color=tty"
+alias ll="ls -halt --color=tty"
 alias cO="curl -L -O"
 alias randstr="cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 32 | head -n 1"
 alias tax="tmux attach-session"
