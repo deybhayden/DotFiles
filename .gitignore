@@ -6,6 +6,7 @@
 .local/share
 !.local/bin/macsimus.sh
 !.local/bin/battery
+!.local/bin/docker-nuke
 .vim/.netrwhist
 .vim/spell
 .vim/view
