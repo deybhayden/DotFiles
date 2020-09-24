@@ -27,9 +27,10 @@ if [[ ! $(brew --version) ]]; then
   brew tap homebrew/cask-cask
   brew tap homebrew/cask-drivers
   brew tap homebrew/cask-fonts
+  brew tap homebrew/cask-versions
 
   echo "Installing casks"
-  brew cask install appcleaner docker flycut font-fira-mono font-open-sans google-backup-and-sync google-chrome iterm2 karabiner-elements keepingyouawake logitech-options nightowl slack zoomus
+  brew cask install appcleaner docker sequel-pro-nightly flycut font-fira-mono font-open-sans google-backup-and-sync google-chrome iterm2 karabiner-elements keepingyouawake logitech-options nightowl slack zoomus
 
   echo "Installing global python tools"
   MY_PYTHON_VERSION=3.8.5
