@@ -240,16 +240,19 @@ alias db='docker build'
 alias dx='docker exec -it'
 alias dr='docker run'
 alias di='docker images'
+complete -F _docker_images di
 alias dv='docker volume'
 alias ds='docker stats'
-complete -F _docker_images di
 alias dri='docker rmi $(docker images -f "dangling=true" -q)'
 alias drc='docker rm $(docker ps -f "status=exited" -q)'
 alias dp='docker ps'
 complete -F _docker_container_ls dp
-alias dcu="docker-compose up"
-alias dcd="docker-compose down"
-alias dcb="docker-compose build"
+alias dc='docker-compose'
+complete -F _docker_compose dc
+alias dcu='docker-compose up'
+alias dcd='docker-compose down'
+alias dcb='docker-compose build'
+alias dcx='docker-compose exec'
 
 # If there are custom aliases, load them
 if [[ -f $HOME/.bash_aliases ]] ; then
