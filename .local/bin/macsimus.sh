@@ -38,8 +38,7 @@ if [[ ! $(brew --version) ]]; then
   pyenv global $MY_PYTHON_VERSION
   echo $MY_PYTHON_VERSION >> $HOME/.python-version
   pip install --upgrade pip
-  pip install flake8
-  pip install vim-vint
+  pip install black flake8 vim-vint
 
   echo "Installing global npms"
   npm install -g firebase-tools prettier jsonlint markdownlint-cli
