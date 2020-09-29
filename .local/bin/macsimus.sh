@@ -33,10 +33,11 @@ if [[ ! $(brew --version) ]]; then
   brew cask install appcleaner docker sequel-pro-nightly flycut font-fira-mono font-open-sans google-backup-and-sync google-chrome iterm2 karabiner-elements keepingyouawake logitech-options nightowl slack zoomus
 
   echo "Installing global python tools"
-  MY_PYTHON_VERSION=3.8.5
-  pyenv install $MY_PYTHON_VERSION
-  pyenv global $MY_PYTHON_VERSION
-  echo $MY_PYTHON_VERSION >> $HOME/.python-version
+  MY_PY2K_VERSION=3.8.5
+  MY_PY3K_VERSION=2.7.17
+  pyenv install $MY_PY2K_VERSION
+  pyenv install $MY_PY3K_VERSION
+  pyenv global $MY_PY3K_VERSION $MY_PY2K_VERSION
   pip install --upgrade pip
   pip install black flake8 vim-vint
 
