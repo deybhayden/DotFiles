@@ -111,8 +111,17 @@ rpg() {
 alias ip="ipython"
 alias pylab="ipython --pylab"
 pyserve() {
-  [ `command -v open` ] && open "http://0.0.0:8000/"
-  python -m http.server
+  # open browser to localhost
+  [ `command -v open` ] && open "http://0.0.0.0:8000/"
+  # launch Python3 http server at local directory
+  pyenv shell 3.8.5
+  if [ $# -eq 1  ]; then
+    python -m http.server --directory $1
+  else
+    # current directory
+    python -m http.server
+  fi
+  pyenv shell -
 }
 
 # fzf configuration
