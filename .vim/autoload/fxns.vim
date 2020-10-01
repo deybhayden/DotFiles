@@ -39,4 +39,19 @@ function! fxns#DeleteView() abort
   echo 'Deleted: '.path
 endfunction
 
+" Function used to toggle debug statements in code
+function! fxns#InsertDebugLine(str, lnum) abort
+  let line = getline(a:lnum)
+  if strridx(line, a:str) != -1
+    normal! dd
+  else
+    let plnum = prevnonblank(a:lnum)
+    call append(line('.')-1, repeat(' ', indent(plnum)).a:str)
+    normal! k
+  endif
+
+  " Save file without any events
+  if &modifiable && &modified | noautocmd write | endif
+endfunction
+
 " vim:set ft=vim et sw=2:
