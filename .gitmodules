@@ -91,3 +91,6 @@
 [submodule ".vim/pack/benjavim/start/toml"]
 	path = .vim/pack/benjavim/start/toml
 	url = https://github.com/cespare/vim-toml.git
+[submodule ".vim/pack/benjavim/start/jsonnet"]
+	path = .vim/pack/benjavim/start/jsonnet
+	url = https://github.com/google/vim-jsonnet.git
