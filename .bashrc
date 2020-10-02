@@ -242,6 +242,17 @@ gst-repos() {
   done
 }
 
+# Hub shorcuts
+alias git="hub"
+hpr() {
+  ggp
+  hub pull-request --draft
+}
+alias hpc="hub pr checkout"
+
+# htop
+alias top="htop --no-color"
+
 # Docker aliases
 alias d='docker'
 complete -F _docker d
