@@ -242,6 +242,14 @@ gst-repos() {
   done
 }
 
+gr-amend-email() {
+  if [ $# -eq 0  ]; then
+    echo "nothing to do..."
+    return 1
+  fi
+  git rebase --exec 'git commit --amend --no-edit --author "Ben Hayden <'$1'>"' -i origin/master
+}
+
 # Hub shorcuts
 alias git="hub"
 hpr() {
