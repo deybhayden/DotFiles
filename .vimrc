@@ -60,6 +60,7 @@ set noerrorbells visualbell t_vb=
 set mouse=a
 " Share GUI clipboard
 set clipboard^=unnamedplus,unnamed
+
 " Set up fzf
 if has('macunix')
   set runtimepath+=/usr/local/opt/fzf
@@ -68,6 +69,21 @@ else
   set runtimepath+=~/.fzf
 endif
 let g:fzf_tags_command = 'ctags -R'
+let g:fzf_colors =
+\ { 'fg':      ['fg', 'Normal'],
+  \ 'bg':      ['bg', 'StatusLine'],
+  \ 'hl':      ['fg', 'Comment'],
+  \ 'fg+':     ['fg', 'CursorLine', 'CursorColumn', 'Normal'],
+  \ 'bg+':     ['bg', 'CursorLine', 'CursorColumn'],
+  \ 'hl+':     ['fg', 'Statement'],
+  \ 'info':    ['fg', 'PreProc'],
+  \ 'border':  ['fg', 'Ignore'],
+  \ 'prompt':  ['fg', 'Conditional'],
+  \ 'pointer': ['fg', 'Exception'],
+  \ 'marker':  ['fg', 'Keyword'],
+  \ 'spinner': ['fg', 'Label'],
+  \ 'header':  ['fg', 'Comment'] }
+
 " Disable autopair keybindings
 let g:AutoPairsShortcutToggle = ''
 let g:AutoPairsShortcutFastWrap = ''
