@@ -140,7 +140,7 @@ __git_complete gc _git_commit
 alias gc!="git commit -v --amend"
 alias gca!="git commit -v -a --amend"
 alias gcan!="git commit -v -a --no-edit --amend"
-alias gcf="git commit --fixup="
+alias gcf="git commit -a --fixup"
 alias gco="git checkout"
 __git_complete gco _git_checkout
 alias gcl="git clone"
@@ -170,7 +170,7 @@ alias grb='git rebase'
 __git_complete grb _git_rebase
 alias grba='git rebase --abort'
 alias grbc='git rebase --continue'
-alias grbi='git rebase -i'
+alias grbi='git rebase --autosquash -i'
 __git_complete grbi _git_rebase
 alias grbs='git rebase --skip'
 alias grh='git reset HEAD'
