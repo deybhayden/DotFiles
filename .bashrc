@@ -252,13 +252,12 @@ gr-amend-email() {
   git rebase --exec 'git commit --amend --no-edit --author "Ben Hayden <'$1'>"' -i origin/master
 }
 
-# Hub shorcuts
-alias git="hub"
-hpr() {
+# gh shorcuts
+ghp() {
   ggp
-  hub pull-request --draft
+  gh pr create --draft
 }
-alias hpc="hub pr checkout"
+alias ghc="gh pr checkout"
 
 # htop
 alias top="htop --no-color"
