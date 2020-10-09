@@ -172,6 +172,7 @@ alias grba='git rebase --abort'
 alias grbc='git rebase --continue'
 alias grbi='git rebase --autosquash -i'
 __git_complete grbi _git_rebase
+alias grbm='git rebase --autosquash -i origin/master'
 alias grbs='git rebase --skip'
 alias grh='git reset HEAD'
 alias gsh='git show'
@@ -214,6 +215,7 @@ gsmash() {
   ggp
 }
 
+# function to count contributors of a file over the past 2 years
 gl-cnt() {
   git log origin/master --no-merges --since="2 year ago" --pretty='%ae' -- $1 | sort | uniq -c | sort -r
 }
