@@ -52,6 +52,9 @@ if [[ ! $(brew --version) ]]; then
   defaults write -g ApplePressAndHoldEnabled -bool false
   defaults write NSGlobalDomain KeyRepeat -int 2
   defaults write NSGlobalDomain InitialKeyRepeat -int 12
+
+  echo "GitHub CLI login"
+  gh auth login
 else
   brew update
   brew upgrade
