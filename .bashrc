@@ -217,6 +217,14 @@ gsmash() {
 
 # function to count contributors of a file over the past 2 years
 gl-cnt() {
+  if [ ! -d ".git" ]; then
+    echo "must be ran inside a git repository"
+    return 1
+  fi
+  if [ $# -eq 0  ]; then
+    echo "requires a filename"
+    return 1
+  fi
   git log origin/master --no-merges --since="2 year ago" --pretty='%ae' -- $1 | sort | uniq -c | sort -r
 }
 
