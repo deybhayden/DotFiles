@@ -228,6 +228,15 @@ gl-cnt() {
   git log origin/master --no-merges --since="2 year ago" --pretty='%ae' -- $1 | sort | uniq -c | sort -r
 }
 
+# find a file in git history, even if it is currently deleted
+gl-history() {
+  if [ $# -eq 0  ]; then
+    echo "requires a filename"
+    return 1
+  fi
+  git log --full-history -- $1
+}
+
 gl-repos() {
   GREEN='\033[0;32m'
   NC='\033[0m' # No Color
