@@ -297,6 +297,8 @@ alias dc='docker-compose'
 complete -F _docker_compose dc
 alias dcu='docker-compose up'
 alias dcd='docker-compose down'
+alias dcs='docker-compose start'
+alias dcp='docker-compose stop'
 alias dcb='docker-compose build'
 alias dcx='docker-compose exec'
 
