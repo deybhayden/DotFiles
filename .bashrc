@@ -216,7 +216,7 @@ gsmash() {
 }
 
 # function to count contributors of a file over the past 2 years
-gl-cnt() {
+glg-cnt() {
   if [ ! -d ".git" ]; then
     echo "must be ran inside a git repository"
     return 1
@@ -229,12 +229,31 @@ gl-cnt() {
 }
 
 # find a file in git history, even if it is currently deleted
-gl-history() {
+glg-history() {
   if [ $# -eq 0  ]; then
     echo "requires a filename"
     return 1
   fi
   git log --full-history -- $1
+}
+
+# Search for all emails used by passed search string since passed date
+glg-search-for-emails() {
+  if [ $# -lt 2  ]; then
+    echo "nothing to do..."
+    return 1
+  fi
+  echo "Beginning search..."
+  for d in $(ls "$REPO_DIR"); do
+    (
+      cd "$REPO_DIR/$d"
+      if [ -d ".git" ]; then
+        if git shortlog --summary --email --since $1 | grep -i $2 ; then
+          printf "== Found in $d ==\n\n"
+        fi
+      fi
+    )
+  done
 }
 
 gl-repos() {
