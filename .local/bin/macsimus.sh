@@ -43,7 +43,7 @@ if [[ ! $(brew --version) ]]; then
   pip install black flake8 vim-vint
 
   echo "Installing global npms"
-  npm install -g firebase-tools prettier jsonlint markdownlint-cli
+  npm install -g eslint firebase-tools prettier jsonlint markdownlint-cli
 
   echo "Stowing files"
   stow -t ~ .

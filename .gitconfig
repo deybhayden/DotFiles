@@ -11,6 +11,9 @@
         excludesfile = ~/.gitignore_global
         attributesfile = ~/.gitattributes_global
 
+[diff]
+        renameLimit = 1000
+
 [push]
         default = simple
 
