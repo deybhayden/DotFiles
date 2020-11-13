@@ -22,6 +22,8 @@
 	<false/>
 	<key>DimOnlyText</key>
 	<false/>
+	<key>EnableDivisionView</key>
+	<false/>
 	<key>GlobalKeyMap</key>
 	<dict>
 		<key>0x19-0x60000</key>
@@ -216,7 +218,13 @@
 	</dict>
 	<key>HapticFeedbackForEsc</key>
 	<false/>
+	<key>HideActivityIndicator</key>
+	<true/>
+	<key>HideMenuBarInFullscreen</key>
+	<true/>
 	<key>HideScrollbar</key>
+	<true/>
+	<key>HideTabNumber</key>
 	<true/>
 	<key>HotkeyMigratedFromSingleToMulti</key>
 	<true/>
@@ -1954,17 +1962,25 @@
 			<string>kNextWindowPointerAction</string>
 		</dict>
 	</dict>
+	<key>PreserveWindowSizeWhenTabBarVisibilityChanges</key>
+	<false/>
 	<key>Print In Black And White</key>
 	<true/>
 	<key>QuitWhenAllWindowsClosed</key>
 	<false/>
 	<key>RunJobsInServers</key>
 	<true/>
+	<key>ShowFullScreenTabBar</key>
+	<false/>
+	<key>ShowNewOutputIndicator</key>
+	<false/>
 	<key>ShowPaneTitles</key>
 	<false/>
 	<key>SmartPlacement</key>
 	<true/>
 	<key>SoundForEsc</key>
+	<false/>
+	<key>StretchTabsToFillBar</key>
 	<false/>
 	<key>SwitchPaneModifier</key>
 	<integer>9</integer>
@@ -1972,11 +1988,17 @@
 	<integer>6</integer>
 	<key>SwitchWindowModifier</key>
 	<integer>9</integer>
+	<key>TabStyleWithAutomaticOption</key>
+	<integer>6</integer>
 	<key>TabViewType</key>
 	<integer>0</integer>
+	<key>TabsHaveCloseButton</key>
+	<false/>
 	<key>TmuxUsesDedicatedProfile</key>
 	<true/>
 	<key>VisualIndicatorForEsc</key>
+	<false/>
+	<key>WindowNumber</key>
 	<false/>
 	<key>WordCharacters</key>
 	<string>pref</string>
