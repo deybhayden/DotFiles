@@ -108,6 +108,15 @@ rpg() {
   rg $1 -p | less -R
 }
 
+2gif() {
+  if [ $# -lt 2  ]; then
+    echo "requires a filename & size"
+    return 1
+  fi
+  GIF=$(echo "$1" | perl -pe 's/\.\w+$/.gif/')
+  ffmpeg -y -i "$1" -filter_complex "[0:v] fps=12,scale=$2:-2,split [a][b];[a] palettegen [p];[b][p] paletteuse" -f gif "$GIF"
+}
+
 # python
 alias ip="ipython"
 alias pylab="ipython --pylab"
