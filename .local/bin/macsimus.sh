@@ -30,8 +30,8 @@ if [[ ! $(brew --version) ]]; then
   brew tap homebrew/cask-versions
 
   echo "Installing casks"
-  brew cask install appcleaner docker sequel-pro-nightly flycut font-fira-mono font-open-sans google-backup-and-sync google-chrome iterm2 karabiner-elements keepingyouawake logitech-options nightowl slack zoomus
-  brew cask install macvim --no-binaries
+  brew install --cask appcleaner docker sequel-pro-nightly flycut font-fira-mono font-open-sans google-backup-and-sync google-chrome iterm2 karabiner-elements keepingyouawake logitech-options nightowl slack zoomus
+  brew install --cask macvim --no-binaries
 
   echo "Installing global python tools"
   MY_PY2K_VERSION=3.8.5
