@@ -168,6 +168,7 @@ alias gdc="git diff --cached"
 __git_complete gdc _git_diff
 alias gl="git pull"
 __git_complete gl _git_pull
+alias glf="git ls-files"
 alias glg="git log --stat"
 __git_complete glg _git_log
 alias glgp="git log --stat -p"
