@@ -17,7 +17,7 @@ if [[ ! $(brew --version) ]]; then
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
   echo "Installing brew packages"
-  brew install awscli bash bash-completion coreutils ctags direnv ffmpeg findutils fzf gcc gh git git-lfs gnu-sed gnutls gpg grep htop hugo jq lazydocker nodejs openssl p7zip packer pango pipenv pyenv pyenv-virtualenv rbenv rename ripgrep scc stow tmux urlview vim z zlib
+  brew install awscli bash bash-completion coreutils ctags direnv ffmpeg findutils fzf gcc gh git git-lfs gnu-sed gnutls gpg grep htop httpie hugo jq lazydocker nodejs openssl p7zip packer pango pipenv pyenv pyenv-virtualenv rbenv rename ripgrep scc stow tmux urlview vim z zlib
 
   echo "Changing default shell to latest bash"
   echo "/usr/local/bin/bash" | sudo tee -a /etc/shells
@@ -40,7 +40,7 @@ if [[ ! $(brew --version) ]]; then
   pyenv install $MY_PY3K_VERSION
   pyenv global $MY_PY3K_VERSION $MY_PY2K_VERSION
   pip install --upgrade pip
-  pip install black flake8 vim-vint
+  pip install black flake8 vim-vint visidata
 
   echo "Installing global npms"
   npm install -g eslint firebase-tools prettier jsonlint markdownlint-cli
