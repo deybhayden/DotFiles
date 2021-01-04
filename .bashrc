@@ -141,7 +141,7 @@ bind -x '"\ep": vim $(fzf --height 40% --reverse);'
 
 # Git utilities
 alias g="git"
-complete -o bashdefault -o default -o nospace -F _git g
+__git_complete g __git_main
 alias gst="git status"
 alias ga="git add"
 __git_complete ga _git_add
