@@ -17,7 +17,7 @@ if [[ ! $(brew --version) ]]; then
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
   echo "Installing brew packages"
-  brew install awscli bash bash-completion coreutils ctags direnv ffmpeg findutils fzf gcc gh git git-lfs gnu-sed gnutls gpg grep htop httpie hugo jq lazydocker nodejs openssl p7zip packer pango pipenv pyenv pyenv-virtualenv rbenv rename ripgrep scc stow tmux urlview vim z zlib
+  brew install awscli bash bash-completion coreutils ctags direnv ffmpeg findutils fzf gcc gh git git-lfs gnu-sed gnutls gpg grep htop httpie hugo jq lazydocker nodejs openssl p7zip packer pango postgresql pipenv pyenv pyenv-virtualenv rbenv rename ripgrep scc stow tmux urlview vim z zlib
 
   echo "Changing default shell to latest bash"
   echo "/usr/local/bin/bash" | sudo tee -a /etc/shells
@@ -34,7 +34,7 @@ if [[ ! $(brew --version) ]]; then
   brew install --cask macvim --no-binaries
 
   echo "Installing global python tools"
-  MY_PY2K_VERSION=3.8.5
+  MY_PY2K_VERSION=3.8.6
   MY_PY3K_VERSION=2.7.17
   pyenv install $MY_PY2K_VERSION
   pyenv install $MY_PY3K_VERSION
