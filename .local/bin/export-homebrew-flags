@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+# Set Compiler Flags with Homebrew directories
+FFI_PREFIX=$(brew --prefix libffi)
+ZLIB_PREFIX=$(brew --prefix zlib)
+SQLITE_PREFIX=$(brew --prefix sqlite)
+OPENSSL_PREFIX=$(brew --prefix openssl)
+READLINE_PREFIX=$(brew --prefix readline)
+NCURSES_PREFIX=$(brew --prefix ncurses)
+XCRUN_SDKPATH=$(xcrun --show-sdk-path)
+export LDFLAGS="-L$FFI_PREFIX/lib -L$ZLIB_PREFIX/lib -L$SQLITE_PREFIX/lib -L$OPENSSL_PREFIX/lib -L$READLINE_PREFIX/lib -L$NCURSES_PREFIX/lib -L$XCRUN_SDKPATH/usr/lib"
+export CPPFLAGS="-I$FFI_PREFIX/include -I$ZLIB_PREFIX/include -I$SQLITE_PREFIX/include -I$OPENSSL_PREFIX/include -I$READLINE_PREFIX/include -I$NCURSES_PREFIX/include -I$XCRUN_SDKPATH/usr/include -Qunused-arguments"
+export CFLAGS="-Qunused-arguments"
+export PKG_CONFIG_PATH="$FFI_PREFIX/lib/pkgconfig:$OPENSSL_PREFIX/lib/pkgconfig"

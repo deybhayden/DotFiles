@@ -80,7 +80,7 @@ alias ev='vim "$HOME/.vimrc"'
 alias ea='vim "$HOME"/.bash_aliases'
 alias ep='vim "$HOME"/.bash_profile'
 alias et='vim "$HOME"/.tmux.conf'
-alias em='vim "$HOME"/.local/bin/macsimus.sh'
+alias em='vim "$HOME"/.local/bin/macsimus'
 
 # Directory alieases
 alias src='source "$HOME/.bash_profile"'
