@@ -1,6 +1,6 @@
 set guioptions=
 if has('macunix')
-  set guifont=FiraMono-Regular:h13
+  set guifont=FiraMono-Regular:h13:b:i
 endif
 
 if has("gui_macvim")
